@@ -2,6 +2,8 @@
 Feature:OpenHR Employee Edit
 In order to edit an employee in the OpenHR page we have to access the employee list
 
+Background: OpenHR Login
+
 Scenario:Access the Employee list page
 Given I am in the OpenHR principal page
 When I select the PIM option in Menu

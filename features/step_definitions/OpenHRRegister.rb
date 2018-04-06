@@ -1,5 +1,9 @@
 #Scenario:Access the add Employee page
 Given("I am in the OpenHR main page") do
+  #Calling Login Steps
+  step "I am on the OpenHR Page"
+  step "I enter the required data"
+  step "Press login Button"
   assert_text('Welcome Admin')
 end
   

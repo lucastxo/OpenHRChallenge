@@ -1,5 +1,9 @@
 #Scenario:Access the Employee list page
 Given("I am in the OpenHR principal page") do
+    #Calling Login Steps
+    step "I am on the OpenHR Page"
+    step "I enter the required data"
+    step "Press login Button"
    assert_text('Welcome Admin')
 end
 
@@ -21,9 +25,9 @@ Given("I am in the employee list") do
 end
   
 When("Fill the fields click search and select the data") do
-   fill_in('empsearch_employee_name_empName', :with => 'Test Cucumber Test')
+   fill_in('empsearch_employee_name_empName', :with => 'Linda')
    click_button(id:'searchBtn')
-   click_link('Test Cucumber')
+   click_link('Linda')
 end
 Then("the employee register should open") do
    assert_text('Personal Details')

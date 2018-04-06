@@ -8,7 +8,7 @@ require 'cucumber'
 require 'selenium/webdriver'
 require 'selenium-webdriver'
 require 'capybara/dsl'
-require 'pry'
+
 
 include Capybara::DSL
 	Capybara.register_driver :selenium do |globalweb|
